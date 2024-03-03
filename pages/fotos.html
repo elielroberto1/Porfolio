@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Eliel Costa</title>
+    <link rel="stylesheet" href="styleFotos.css">
+</head>
+<body>
+    <!--MENU-->
+    <div class="conteudo-header">
+        <header>
+            <div class="logo">
+                <a href="../index.html">Eliel R. Costa</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html" onclick="selecionar()">INICIO</a></li>
+                    <!--
+                    <li><a href="#sobremim"onclick="selecionar()">SOBRE MIM</a></li>
+                    <li><a href="#skills"onclick="selecionar()">SKILLS</a></li>
+                    <li><a href="#curriculo"onclick="selecionar()">CURRICULO</a></li>
+                    <li><a href="#portfolio"onclick="selecionar()">PORTFÓLIO</a></li>
+                    <li><a href="#contato"onclick="selecionar()">CONTATO</a></li>
+                    -->
+                </ul>
+            </nav>
+            <div class="nav-responsiva" onclick="MostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            </div>
+        </header>
+    </div>
+
+<!--SOBRE MIM-->
+<section id="sobremim" class="sobremim">
+    <div class="conteudo-seccion">
+        <H2>Fotos</H2>
+        <p>Aqui estão algumas fotos sobre mim:
+        </p>
+
+        <div class="slider">
+
+          <div class="slides">
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first" >
+              <img src="../assets/img/Eliel2.jpeg" alt="" width="1200" height="1600">
+            </div>
+
+            <div class="slide">
+              <img src="../assets/img/Eliel3.png" alt="" width="1500" height="1925">
+            </div>
+
+            <div class="slide">
+              <img src="../assets/img/Eliel4.jpeg" alt="" width="1066" height="1600">
+            </div>
+
+            <div class="slide" >
+              <img src="../assets/img/Eliel5.jpeg" alt="" width="960" height="1280">
+            </div>
+
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+          </div>
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+      </section>
+
+
+<footer>
+
+    <div class="redes">
+            <a href="https://www.facebook.com/eliel.roberto.52/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <!--<a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+            <a href="https://github.com/elielroberto1" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://br.linkedin.com/in/elielrcosta" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_elielroberto/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>

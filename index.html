@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Eliel Costa</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        window.onload = function() {
+          // Verificar se a página atual é a página inicial
+          if(window.location.pathname === "/index.html") {
+            // Exibir o alerta apenas na página inicial
+            alert("Olá! Gostaria de expressar minha sincera gratidão por você visitar meu site pessoal e conferir meu portfólio. Sua presença aqui significa muito para mim e estou muito feliz em poder compartilhar meu trabalho com você.\n Espero que meu portfólio possa inspirá-lo e mostrar um pouco mais sobre quem eu sou e o que posso fazer. Agradeço novamente por dedicar seu tempo para conhecer meu trabalho e espero que você tenha uma experiência agradável ao navegar pelo meu site.\n Obrigado!");
+          }
+        };
+      </script>
+</head>
+<body>
+    <!--MENU-->
+    <div class="conteudo-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">Eliel R. Costa</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="selecionar()">INICIO</a></li>
+                    <li><a href="#sobremim"onclick="selecionar()">SOBRE MIM</a></li>
+                    <li><a href="#skills"onclick="selecionar()">SKILLS</a></li>
+                    <li><a href="#curriculo"onclick="selecionar()">CURRICULO</a></li>
+                    <li><a href="#portfolio"onclick="selecionar()">PORTFÓLIO</a></li>
+                    <li><a href="#contato"onclick="selecionar()">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsiva" onclick="MostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            </div>
+        </header>
+    </div>
+<!--INICIO-->
+<section id="inicio" class="inicio">
+    <div class="conteudo-banner">
+        <div class="conteudo-img">
+            <img src="assets/img/eliel.png" alt="">
+        </div>
+        <h1>ELIEL COSTA</h1>
+        <h2>Tecnólogo em Análise e Desenvolvimento de Sistemas</h2>
+        <div class="redes">
+            <a href="https://www.facebook.com/eliel.roberto.52/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/elielroberto1" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://br.linkedin.com/in/elielrcosta" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_elielroberto/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+    </div>
+</section>
+<!--SOBRE MIM-->
+<section id="sobremim" class="sobremim">
+    <div class="conteudo-seccion">
+        <H2>Sobre Mim</H2>
+        <p><span> Olá, sou Eliel Roberto da Costa</span>, tenho 23 anos, estou noivo e recentemente me formei em Análise e Desenvolvimento de Sistemas na Universidade de São Caetano do Sul. Estou muito ansioso para conseguir o meu primeiro emprego na área de Tecnologia da Informação. Desde muito jovem, sempre me envolvi com computadores e sempre gostei de resolver meus próprios problemas computacionais, mesmo que isso implicasse em passar horas e horas tentando resolvê-los. Considero uma das minhas maiores conquistas o meu diploma no ensino superior, sendo um dos poucos jovens negros em uma universidade. Também tenho orgulho de ter ingressado em uma empresa de grande porte como Jovem Aprendiz e hoje ocupar um cargo sênior. Estou um pouco apreensivo pois ainda não adquiri experiência na área profissional da tecnologia e meu desejo é tornar-me um Desenvolvedor Web altamente competente. Quando der os meus primeiros passos nesse campo, anseio por encontrar mentores e colaboradores que possam não só compartilhar seu conhecimento, mas também me guiar com sabedoria nesse mundo da programação. Minha jornada está apenas começando, e sei que o apoio e a orientação de indivíduos experientes serão fundamentais para que eu possa alcançar meu objetivo e dominar as complexidades na área da tecnologia. Sei que não será uma jornada fácil, mas como sempre, darei o meu melhor para evoluir continuamente e contribuir ao máximo ajudando a todos ao meu redor.
+        </p>
+        <div class="fila">
+            <!--MEUS DADOS PESSOAIS-->
+            <div class="col">
+                <h3>Dados pessoais</h3>
+                <ul>
+                    <li>
+                        <strong>Aniversário</strong>
+                        06/08/2000
+                    </li>
+                    <li>
+                        <strong>Telefone</strong>
+                        11 99015-0463
+                    </li>
+                    <li>
+                        <strong>E-mail</strong>
+                        eliel.robertocosta@outlook.com
+                    </li>
+                    <li>
+                        <strong>WebSite</strong>
+                        https://elielroberto1.github.io/MeuPortfolio/
+                    </li>
+                    <li>
+                        <strong>Endereço</strong>
+                        Jardim das Maravilhas, Santo André - SP
+                    </li>
+
+                    <li>
+                        <strong>Cargo Atual</strong>
+                        <span>Aux. Escritório Senior</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!--INTERESSES-->
+            <div class="col">
+                <h3>Interesses</h3>
+                <div class="conteudo-interesses">
+                    <div class="interesse" onclick="jogos()">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>JOGOS</span>
+                    </div>
+                    <div class="interesse" onclick="musica()">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>MUSICA</span>
+                    </div>
+                    <div class="interesse" onclick="viajar()">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>VIAJAR</span>
+                    </div>
+                    <div class="interesse" onclick="auto()">
+                        <i class="fa-solid fa-car"></i>
+                        <span>AUTOS</span>
+                    </div>
+                    <div class="interesse" onclick="fotos()">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>FOTOS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="cv()">
+
+            <i class="fa-solid fa-download">  Baixar CV</i>
+            <span class="overlay"></span>
+        </button>
+    </div>
+</section>
+
+<!--SKILLS-->
+<section class="skills" id="skills">
+    <div class="conteudo-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+            <!--Technical Skill-->
+            <div class="col">
+                <h3>Hard Skills</h3>
+                <div class="skill">
+                    <span>Java Script</span>
+                    <div class="barra-skill">
+                        <div class="progresso">
+                            <span>55%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="barra-skill">
+                        <div class="progresso">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>C#</span>
+                    <div class="barra-skill">
+                        <div class="progresso">
+                            <span>25%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Banco de Dados - SQL</span>
+                    <div class="barra-skill">
+                        <div class="progresso">
+                            <span>25%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Competência em Inglês para T.I</span>
+                    <div class="barra-skill">
+                        <div class="progresso">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Skills Profissionais-->
+            <div class="col">
+                <h3>Soft Skills</h3>
+                <div class="skill">
+                    <span>Comunicação</span>
+                    <div class="barra-skill">
+                        <div class="progresso">
+                            <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Trabalho em equipe</span>
+                    <div class="barra-skill">
+                        <div class="progresso">
+                            <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Criatividade</span>
+                    <div class="barra-skill">
+                        <div class="progresso">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Dedicação</span>
+                    <div class="barra-skill">
+                        <div class="progresso">
+                            <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Proatividade</span>
+                    <div class="barra-skill">
+                        <div class="progresso">
+                            <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--CURRICULO-->
+<section id="curriculo" class="curriculo">
+    <div class="conteudo-seccion">
+        <h2>Curriculo</h2>
+        <div class="fila">
+            <div class="col esquerda">
+                <h3>Educação</h3>
+                <br>
+
+                <div class="item esq">
+                    <h4>USCS - Universidade Municipal de São Caetano do Sul</span></h4>
+                    <span class="casa">Análise e Desenvolvimento de Sistemas </span>
+                    <span class="fecha">2021 - 12/2023</span>
+                    <p>Habilidades em programação, desenvolvimento de aplicações web e mobile, gerenciamento de sistemas operacionais, gerenciamento de bancos de dados e projetos de software, além de um entendimento avançado sobre arquiteturas de sistemas. Também desenvolvi conhecimentos em conceitos de segurança da informação, incluindo segurança e auditoria de sistemas, virtualização computacional, integração de sistemas, metodologias ágeis, comunicação corporativa, testes e suas automações, além de DEVOPS. Aptdao para resolver problemas complexos com eficiência.
+                        <br>
+                        <br>
+                        <button class="certificado"onclick="certificadoUSCS()">Certificado</button>
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="item esq" >
+                    <h4>OneBitCode</h4>
+                    <span class="casa">Formação Full Stack JavaScript</span>
+                    <span class="fecha">2023 - Até o momento</span>
+                    <p>Teoria e prática avançadas em tecnologias como: HTML5; CSS3 + SASS; CSS Moderno (Flex + Grid); Bootstrap; JavaScript + Lógica de Programação; Git e GitHub; TypeScript; Banco de Dados SQL (PostgreSQL); NodeJS; NextJS
+                        <br>
+                        <br>
+                        <button class="certificado"onclick="certificadoONEBITCODE()">Certificado</button>
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+
+                <div class="item esq">
+                    <h4>Dev Samurai</h4>
+                    <span class="casa">Front-End</span>
+                    <span class="fecha">11/2023 - Até o momento</span>
+                    <p>Nível básico de JavaScript e fundamentos básicos em TypeScript e React.Js
+                        <br>
+                        <br>
+                        <button class="certificado"onclick="certificadoSamurai()">Certificado</button>
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+
+                <div class="item esq">
+                    <h4>ISBET - Instituto Brasileiro Pró Educação Trabalho e desenvolvimento</h4>
+                    <span class="casa">Auxiliar de Serviços Administrativos</span>
+                    <span class="fecha">22/05/2018 - 06/08/2019</span>
+                    <p>Noções básicas de administração, atendimento ao cliente, comunicação empresarial, rotinas administrativas, uso de softwares de escritório, noções básicas de contabilidade e  RH e ética profissional.
+                        <br>
+                        <br>
+                        <button class="certificado"onclick="certificadoISBET()">Certificado</button>
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+
+                <div class="item esq">
+                    <h4>Master Tech - Facebook</h4>
+                    <span class="casa">DemoDay - Estação Hack</span>
+                    <span class="fecha">2018 e 2019</span>
+                    <p>Noções básicas de back-end e front-end em: HTML, CSS, JAVASCIRPT, E BOOTSTRAP.
+                        <br>
+                        <br>
+                        <button class="certificado"onclick="certificadoFACEBOOK()">Certificado</button>
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+
+                <div class="item esq">
+                    <h4>Giga Byte - Escola Profissionalizante</h4>
+                    <span class="casa">Informatica multiprofissional</span>
+                    <span class="fecha">10/2018</span>
+                    <p>Conhecimento em Windows, Digitação, Internet, Outlook, PowerPoint, Word, Excel, Access, Hardware, Photoshop, CorelDraw, Flash, HTML, Dreamweaver, Marketing Pessoal, Secretariado, Contabilidade, Departamento Pessoal e Administração.
+                        <br>
+                        <br>
+                        <button class="certificado"onclick="certificadoGIGABYTE()">Certificado</button>
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="item esq">
+                    <h4>E.E Professor Rubens Moreira Rocha</h4>
+                    <span class="casa">Ensino Médio</span>
+                    <span class="fecha">2015 - 2017 </span>
+                    <p>
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col direita">
+                <br>
+                <h3>Experiencia de Trabalho</h3>
+
+                <div class="item dir">
+                    <h4>FREITAS LEILOEIRO</h4>
+                    <span class="casa">Aux. de Serviços Administrativos Sênior</span>
+                    <span class="fecha">04/2023 - Até o momento</span>
+                    <p>Atendimento ao cliente (presencial e telefônico), coordenação de aprendizes, gestão de suprimentos, suporte administrativo, gestão de correspondências, gestão de arquivos digitais, edição de vídeos, manter um calendário e coordenar o fluxo de trabalho, manter a organização do escritório e resolver quaisquer problemas ou pendências, e auxílio em problemas relacionados à área da tecnologia, tanto de software quanto de hardware.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
+                    </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="item dir">
+                    <h4>FREITAS LEILOEIRO</h4>
+                    <span class="casa">Aux. de Serviços Administrativos Pleno</span>
+                    <span class="fecha">05/2022 - 04/2023</span>
+                    <p>Atendimento telefônico e presencial, coordenação de aprendizes, manter a organização do escritório e resolver quaisquer problemas ou pendências, preparar apresentações, documentos e outros relatórios, apresentação e edição de vídeos, auxílio em problemas relacionados à área da tecnologia, tanto de software quanto de hardware.
+                    </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="item dir">
+                    <h4>FREITAS LEILOEIRO</h4>
+                    <span class="casa">Aux. de Serviços Administrativos Jr.</span>
+                    <span class="fecha">08/2019 - 05/2022</span>
+                    <p>Atendimento telefônico e presencial quando necessário, coordenação de aprendizes, gerenciamento de e-mails, manipulação mediana de planilhas, recebimento de fornecedores e encaminhamento de documentos, participação em reuniões quando necessário, verificação de entrada e saída de correspondências e auxílio em problemas relacionados à área da tecnologia, tanto de software quanto de hardware.
+                    </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item dir">
+                    <h4>FREITAS LEILOEIRO</h4>
+                    <span class="casa">Aprendiz de Aux. de Serviços Administrativos</span>
+                    <span class="fecha">05/2018 - 08/2019</span>
+                    <p>Atendimento ao cliente, recebimento de documentos, suporte administrativo, arquivamento e organização, uso de tecnologia de escritório.
+                    </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--PORTFOLIO-->
+<section class="portfolio" id="portfolio">
+    <div class="conteudo-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+            <div class="projeto" onclick="calcjs()">
+                <img src="assets/img/PortfolioCalculadora.jpg" alt="" >
+                <div class="overlay">
+                    <h3 >Calculadora</h3>
+                    <p>HTML, CSS & JAVASCIRPT</p>
+                    <p>Site</p>
+                </div>
+            </div>
+            <div class="projeto" onclick="bolosDaTiaBa()">
+                <img src="assets/img/PortifolioBolosDaTiaBa.jpg" alt="">
+                <div class="overlay">
+                    <h3>BolosDaTiaBa - FoodCommerce</h3>
+                    <p>Em Andamento</p>
+                    <p>Vídeo Demo</p>
+                </div>
+            </div>
+            <div class="projeto" onclick="projetoYT()">
+                <img src="assets/img/PotifolioYT.jpg" alt="">
+                <div class="overlay">
+                    <h3>Front-End Home Youtube</h3>
+                    <p>Grid-Layout e Flex box</p>
+                    <p>Site</p>
+
+                </div>
+            </div>
+            <div class="projeto" onclick="ticTacToe()">
+                <img src="assets/img/Jogovelha (1).png" alt="">
+                <div class="overlay">
+                    <h3>Back-End Jogo da velha</h3>
+                    <p>HTML, CSS & JAVASCIRPT</p>
+                    <p>Site</p>
+                </div>
+            </div>
+            <div class="projeto" onclick="seal()">
+                <img src="assets/img/PortifolioSeal.jpg" alt="">
+                <div class="overlay">
+                    <h3>Front-End Site informativo</h3>
+                    <p>HTML & CSS</p>
+                    <p>Site</p>
+                </div>
+            </div>
+            <div class="projeto" onclick="smart()">
+                <img src="assets/img/PortifolioSmart.jpg">
+                <div class="overlay">
+                    <h3>Smart Conecta</h3>
+                    <p>HTML & CSS</p>
+                    <p>Site</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CONTATO-->
+<section id="contato" class="contato">
+    <div class="conteudo-seccion">
+        <h2>CONTATO</h2>
+        <div class="fila">
+            <!--FORMULARIO-->
+
+            <div class="col">
+                <form action="https://formsubmit.co/eliel.robertocosta@outlook.com" method="POST">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="text" name="email" placeholder="E-mail" required>
+                <input type="text" name="_subject" placeholder="Assunto">
+                <textarea name="message:" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                <button type="submit">
+                  Enviar Mensagem  <i class="fa-solid fa-paper-plane"></i>
+                  <span class="overlay"></span>
+                </button>
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+            </div>
+            <!--MAPA-->
+            <div class="col">
+                <img src="assets/img/local.png" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            Jardim das Maravilhas, Santo André - São Paulo
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            (11)99015-0463
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email:eliel.robertocosta@outlook.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer>
+    <a href="#inicio" class="cima">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+            <a href="https://www.facebook.com/eliel.roberto.52/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/elielroberto1" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://br.linkedin.com/in/elielrcosta" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_elielroberto/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
